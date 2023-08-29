@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: rgb(26, 24, 24);
+  color: white;
+}
+form,
+#weather {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  margin: 50px auto;
+  text-align: center;
+}
+input {
+  display: block;
+  width: 100%;
+  background: transparent;
+  color: white;
+  border: 0;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  font-size: 1.2rem;
+  padding: 5px 0;
+}
+input[type="text"]:focus {
+  border-color: rgb(7, 248, 248);
+  outline: 0;
+}
+ul {
+  list-style: none;
+  text-align: left;
+}
+ul li {
+  background-color: #333;
+  margin-top: 4px;
+  padding: 10px;
+  cursor: pointer;
+}
+ul li span {
+  color: #777;
+}
+#degrees {
+  font-size: 5rem;
+}
+#city {
+  font-size: 3rem;
+  margin-top: 10px;
+  color: aqua;
+}
+button#change {
+    
+  margin: 20px;
+  padding: 10px;
+  border: 2px solid #888;
+  background: rgb(143, 62, 215);
+  border-radius: 50px;
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.info {
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr;
+}
+.info h3 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.value {
+  font-size: 2rem;
+}
+.value span {
+  color: #888;
+  font-size: 1rem;
+  display: inline-block;
+  margin-left: 3px;
+}
