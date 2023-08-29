@@ -46,7 +46,6 @@ document.querySelector('input[type = "text"]')
     .addEventListener('keyup', debounced);
 
 document.body.addEventListener('click', ev => {
-    // console.log(ev);
     const li = ev.target;
     const { lat, lon, name } = li.dataset;
     localStorage.setItem('lat', lat);
